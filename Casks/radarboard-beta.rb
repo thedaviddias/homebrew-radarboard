@@ -4,14 +4,14 @@ cask "radarboard-beta" do
   version "0.1.1-beta.1"
   sha256 "4fac31e2210d93e37f5ade1a47355622670c6705988aa4731e7e8c8fcde46d7a"
 
-  url "https://github.com/thedaviddias/radarboard/releases/download/desktop-v#{version}/Radarboard-#{version}-macos-#{arch}.dmg",
-      verified: "github.com/thedaviddias/radarboard/"
+  url "https://github.com/thedaviddias/homebrew-radarboard/releases/download/desktop-v#{version}/Radarboard-#{version}-macos-#{arch}.dmg",
+      verified: "github.com/thedaviddias/homebrew-radarboard/"
   name "Radarboard Beta"
   desc "Local-first desktop board for code, ops, and growth signals"
   homepage "https://radarboard.app"
 
   livecheck do
-    url "https://github.com/thedaviddias/radarboard/releases"
+    url "https://github.com/thedaviddias/homebrew-radarboard/releases"
     regex(/^desktop-v(\d+(?:\.\d+){2}-beta\.\d+)$/i)
   end
 
